@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Animauls;
+
 
 namespace ConsoleApplication1
 {
@@ -10,7 +13,55 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            Stack myStack = new Stack();
+            myStack.Push("String");
+            myStack.Push(34);
+            myStack.Push(myStack);
+            myStack.Pop();
+
+            Stack<string> strStack = new Stack<string>;
+            strStack.Push("A String");
+
+
+
+
+            int intValue = 32;
+            object objValue = intValue;
+            string strValue;
+
+            string errorMessage;
+
+            try
+            {
+                strValue = (string)objValue;
+            }
+            catch(InvalidCastException dErp)
+            {
+                errorMessage = dErp.Message;
+                Console.WriteLine(errorMessage);
+            }
+
+
+            Carro VW = new Carro();
+            VW.Drive();
+            VW.Stopping();
+
+            Animul newAnimul = new Animul();
+            newAnimul.move();
+
+            Animul Dog = new Animul();
+            Dog.Age = 3;
+            Dog.Color = "Blue";
+            Console.WriteLine(Dog.Age);
+            Console.WriteLine(Dog.Color);
             Sum(1, 2);
+
+            Doge Nixon = new Doge();
+            Nixon.move();
+
+            Nixon.move();
+            Nixon.makeNoise();
+
 
             Console.WriteLine(Concatenate2("test ", "me"));
             Concatenate("Test, ", "again");
