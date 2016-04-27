@@ -19,11 +19,16 @@ namespace ConsoleApplication1
             myStack.Push(myStack);
             myStack.Pop();
 
-            Stack<string> strStack = new Stack<string>;
+            SortedList<string, string> sortedListD = new SortedList<string, string>();
+
+            sortedListD.Add("Dan", "IsGreat");
+            sortedListD.Add("He", "IsGreatest");
+            sortedListD.Add("I", "IsGreatester");
+
+            Console.WriteLine(sortedListD);
+
+            Stack<string> strStack = new Stack<string>();
             strStack.Push("A String");
-
-
-
 
             int intValue = 32;
             object objValue = intValue;
