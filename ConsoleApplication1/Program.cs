@@ -13,6 +13,19 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            // C# Essential Training
+
+
+
+
+
+
+
+
+
+
+
+            // Up and Running with C#
             Stack myStack = new Stack();
             myStack.Push("String");
             myStack.Push(34);
